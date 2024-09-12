@@ -3,12 +3,14 @@
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
+    
   ],
   theme: {
     fontFamily:{
-      'montserrat': [ "Montserrat", 'sans-serif'],
-      'poppins': ['Poppins', 'sans-serif']
+      poppins: 'Poppins',
+      montserrat: 'Montserrat'
     },
+   
     extend: {},
   },
   plugins: [],
