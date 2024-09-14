@@ -1,4 +1,5 @@
 
+
 import LoginPage from './pages/loginPage/LoginPage';
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
   <div className='w-full h-screen max-w-screen-2xl mx-auto overflow-x-hidden'>
      <LoginPage />
   </div>
+
 
   );
 }
