@@ -1,10 +1,10 @@
 import React from 'react'
-import OnboardingRequests from '../components/OnboardingRequests'
+import ProviderPreview from '../components/ProviderPreview'
 
 const OnboardingRequestsPage = () => {
   return (
     <div>
-      <OnboardingRequests />
+      <ProviderPreview />
     </div>
   )
 }

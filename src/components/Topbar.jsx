@@ -1,6 +1,7 @@
 import { FaSearch, FaGlobe } from 'react-icons/fa';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import profileImg from '../Assets/manImg2.jpg'
 
 const Topbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -10,9 +11,9 @@ const Topbar = () => {
   };
 
   return (
-    <header className="bg-white w-full flex items-center p-4 shadow">
-      <div className="flex-grow flex justify-center">
-        <div className="flex items-center justify-between bg-gray-100 rounded-lg px-4 w-1/2">
+    <header className="bg-white w-full flex flex-col-reverse min-[490px]:flex-row gap-4 justify-center items-center p-4 shadow">
+      <div className="flex-grow flex justify-between md:justify-center">
+        <div className="flex items-center justify-between bg-gray-100 rounded-lg px-4 w-full min-[490px]:w-1/2 min-w-[120px]">
           <input
             type="text"
             placeholder="Search"
@@ -25,6 +26,7 @@ const Topbar = () => {
         <div className="flex items-center space-x-1 bg-gray-200 px-1 rounded-md">
           <FaGlobe />
           <select className="bg-transparent p-2 outline-none" defaultValue="EN">
+            <option value=""disabled selected>EN</option>
             <option value="en">English</option>
             <option value="ar">Arabic</option>
           </select>
@@ -36,7 +38,7 @@ const Topbar = () => {
             className="cursor-pointer w-10 h-10 rounded-full bg-gray-300"
           >
             <img
-              src="/path-to-profile-image.jpg"
+              src={profileImg}
               alt="Profile"
               className="w-full h-full rounded-full object-cover"
             />

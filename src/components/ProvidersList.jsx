@@ -8,7 +8,7 @@ const ProvidersList = () => {
     ];
   
     return (
-      <div className="bg-white p-6 rounded-lg shadow-md w-full md:w-1/2">
+      <div className="bg-white p-6 rounded-lg shadow-md w-full md:w-2/3 lg:w-1/2">
         <div className="flex justify-between items-center mb-4">
           <h3 className="font-bold">Top Providers</h3>
           <a href="#" className="text-blue-500 underline">View All</a>

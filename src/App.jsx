@@ -18,6 +18,8 @@ import SubCategorySetup from './pages/SubCategorySetup';
 import PromotionalBanners from './pages/PromotionalBanners';
 import SubscriptionPackages from './pages/SubscriptionPackages';
 import Setting from './pages/Setting';
+import AddCategory from './pages/AddCategory';
+import AddSubCategory from './pages/AddSubCategory'
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
           <Route path="list-of-seeker" element={<ListOfSeeker />} />
           <Route path="category-setup" element={<CategorySetup />} />
           <Route path="sub-category-setup" element={<SubCategorySetup />} />
+          <Route path="add-new-category" element={<AddCategory />} />
+          <Route path="add-new-sub-category" element={<AddSubCategory />} />
           <Route path="promotional-banners" element={<PromotionalBanners />} />
           <Route path="subscription-packages" element={<SubscriptionPackages />} />
           <Route path="settings" element={<Setting />} />

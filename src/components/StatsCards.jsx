@@ -9,9 +9,10 @@ const StatsCards = () => {
     ];
   
     return (
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 pb-4">
+      // <div className="grid items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 pb-4">
+      <div className="flex gap-4 flex-wrap items-center justify-center pb-4">
         {stats.map((stat, idx) => (
-          <div key={idx} className={`p-4 rounded-lg text-white ${stat.color}`}>
+          <div key={idx} className={`p-4 rounded-lg text-white w-[220px] ${stat.color}`}>
             <div className="text-xl font-bold">{stat.amount}</div>
             <div>{stat.label}</div>
           </div>

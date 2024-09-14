@@ -94,12 +94,12 @@ const EarningsChart = () => {
         </select>
       </div>
 
-      <div className="w-full h-52"> 
-        <Line data={data} options={options} />
+      <div className="w-full h-[40vh] md:h-62 lg:h-72"> 
+        <Line data={data} options={{...options, responsive:true}} />
       </div>
 
       {/* Custom Legend with dots */}
-      <div className="flex justify-center mt-4 space-x-8 text-sm font-poppins">
+      <div className="flex justify-center mt-4 space-x-8 text-[8px] sm:text-[10px] font-poppins">
         <div className="flex items-center">
           <span className="w-3 h-3 bg-[#6C0FD7] inline-block rounded-full mr-2"></span>
           <span>Total Earning</span>
