@@ -1,13 +1,14 @@
-import './App.css';
-import Router from "../src/Components/Router";
-import LoginPage from '../src/pages/loginPage/LoginPage';
+
+
+import LoginPage from './pages/loginPage/LoginPage';
 
 function App() {
   return (
-    <div>
-     <Router/>
-     {/* <LoginPage/> */}
-    </div>
+  <div className='w-full h-screen max-w-screen-2xl mx-auto overflow-x-hidden'>
+     <LoginPage />
+  </div>
+
+
   );
 }
 
